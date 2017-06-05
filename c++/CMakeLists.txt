@@ -5,3 +5,6 @@ set (CMAKE_CXX_STANDARD 14)
 
 add_executable(split split.cpp)
 add_executable(reverse reverse.cpp)
+add_executable(recursion1 recursion1.cpp)
+add_executable(recursion2 recursion2.cpp)
+add_executable(bin_search bin_search.cpp)
