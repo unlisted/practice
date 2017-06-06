@@ -1,15 +1,23 @@
 #include <iostream>
 #include <memory>
 
-
 struct Node {
-    Node() : payload(-1), next(nullptr) {}
-    Node(int p) : payload(p), next(nullptr) {}
+    Node()
+        : payload(-1)
+        , next(nullptr)
+    {
+    }
+    Node(int p)
+        : payload(p)
+        , next(nullptr)
+    {
+    }
     int payload;
     Node* next;
 };
 
-void Print(const Node* const head) {
+void Print(const Node* const head)
+{
     if (!head) {
         return;
     }
@@ -17,16 +25,17 @@ void Print(const Node* const head) {
     const Node* cur = head;
     do {
         std::cout << cur->payload << std::endl;
-    } while(cur->next && (cur = cur->next));
+    } while (cur->next && (cur = cur->next));
 }
 
-Node* Add(Node* head, int p) {
+Node* Add(Node* head, int p)
+{
     if (!head) {
         return head;
     }
 
-    Node* cur = head; 
-    while(cur->next != nullptr) {
+    Node* cur = head;
+    while (cur->next != nullptr) {
         cur = cur->next;
     }
 
@@ -34,8 +43,8 @@ Node* Add(Node* head, int p) {
     return head;
 }
 
-Node* Reverse(Node*& head) {
-
+Node* Reverse(Node*& head)
+{
     if (!head) {
         return head;
     }
@@ -43,7 +52,7 @@ Node* Reverse(Node*& head) {
     auto next = head->next;
     head->next = nullptr;
     auto prev = head;
-    while(next) {
+    while (next) {
         auto cur = next;
         next = cur->next;
         cur->next = prev;
@@ -52,16 +61,16 @@ Node* Reverse(Node*& head) {
 
     head = prev;
     return head;
-
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
     auto head = new Node(123);
     Add(head, 456);
     Add(head, 789);
     Print(head);
     auto newhead = Reverse(head);
     Print(newhead);
-    
+
     return 0;
 }
