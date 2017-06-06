@@ -21,6 +21,10 @@ add_executable(recursion1 recursion1.cpp)
 add_executable(recursion2 recursion2.cpp)
 add_executable(bin_search bin_search.cpp)
 add_executable(bsort bsort.cpp)
+
 add_executable(isort isort.cpp)
 target_link_libraries(isort ${GTEST_BOTH_LIBRARIES})
+
+add_executable(ssort ssort.cpp)
+target_link_libraries(ssort ${GTEST_BOTH_LIBRARIES})
 
