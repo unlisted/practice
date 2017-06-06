@@ -1,0 +1,15 @@
+binary search
+works on sorted list
+divide in half each iteration
+worst case O(log(n)) complexity
+
+bubble sort
+iterate through list swapping values with next if next is less than current
+poor performance for large n
+worst case O(n^2) - worst occurs when list is reversed
+best case O(n) - list is already sorted
+space O(1) ??
+in place
+stable
+
+

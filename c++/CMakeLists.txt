@@ -30,3 +30,6 @@ target_link_libraries(ssort ${GTEST_BOTH_LIBRARIES})
 
 add_executable(qsort qsort.cpp)
 target_link_libraries(qsort ${GTEST_BOTH_LIBRARIES})
+
+add_executable(msort msort.cpp)
+target_link_libraries(msort ${GTEST_BOTH_LIBRARIES})
