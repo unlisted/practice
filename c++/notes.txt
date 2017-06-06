@@ -12,4 +12,9 @@ space O(1) ??
 in place
 stable
 
+merge sort
+split data set in half recursively until single elements exist, then merge sorting
+worst casr O(nlog(n)) worst,average and best divides into halve (O(log(n)) linear time to merge (O(n))
+space O(n)
+stable
 
