@@ -33,3 +33,6 @@ target_link_libraries(qsort ${GTEST_BOTH_LIBRARIES})
 
 add_executable(msort msort.cpp)
 target_link_libraries(msort ${GTEST_BOTH_LIBRARIES})
+
+add_executable(dfs dfs.cpp)
+target_link_libraries(dfs ${GTEST_BOTH_LIBRARIES})
