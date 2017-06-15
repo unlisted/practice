@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <memory>
+#include <vector>
 
 using namespace std;
 
@@ -12,26 +13,31 @@ struct HashNode {
 
 string getName ()
 {
-        return "Morgan";
+        string ss("morgan");
+        cout << "value: " << ss << endl;;
+        cout << "address: " << &ss << endl;
+        return ss;
 }
 
 // takes all non-mutable rvalue/lvalue because of presence of overload below
 void PrintMe(const std::string& val) {
     cout << "non-mutable lvalue/rvalue ref" << endl;
-    cout << val << endl;
+    cout << "value: " << val << endl;;
+    cout << "address: " << &val << endl;
 }
 
 // takes mutable rvalue ref
 void PrintMe(std::string &&val) {
     cout << "mutable rvalue ref" << endl;
-    cout << val << endl;
+    cout << "value: " << val << endl;;
+    cout << "address: " << &val << endl;
 }
 
 int main(int argc, char *argv[]) {
 
     string ss("test");
     //PrintMe(ss);
-    PrintMe(string("hello"));
+    //PrintMe(string("hello"));
 
 
     auto node = make_unique<HashNode>(1, "test");
@@ -41,6 +47,12 @@ int main(int argc, char *argv[]) {
 
     // casts to mutable rvalue ref
     //PrintMe(move(node->_value));
-    PrintMe(getName());
+    //PrintMe(getName());
+    vector<string> strings;
+
+    strings.push_back(getName());
+    const string &val = strings.back();
+    cout << "value : " << val << endl;
+    cout << "address: " << &val << endl;
     return 0;
 }
