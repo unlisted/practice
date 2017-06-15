@@ -41,5 +41,6 @@ int main(int argc, char *argv[]) {
 
     // casts to mutable rvalue ref
     //PrintMe(move(node->_value));
+    PrintMe(getName());
     return 0;
 }
