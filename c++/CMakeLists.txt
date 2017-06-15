@@ -36,3 +36,14 @@ target_link_libraries(msort ${GTEST_BOTH_LIBRARIES})
 
 add_executable(dfs dfs.cpp)
 target_link_libraries(dfs ${GTEST_BOTH_LIBRARIES})
+
+add_executable(bfs bfs.cpp)
+target_link_libraries(bfs ${GTEST_BOTH_LIBRARIES})
+
+#add_executable(csort csort.cpp)
+#target_link_libraries(csort ${GTEST_BOTH_LIBRARIES})
+
+add_executable(hashmap hashmap.cpp)
+add_executable(rvalue rvalue.cpp)
+
+add_executable(maxtrip maxtrip.cpp)
