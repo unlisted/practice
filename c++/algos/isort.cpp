@@ -26,9 +26,9 @@ template <size_t SIZE> void isort(std::array<int, SIZE>& arr)
 
 TEST(IsortTest, UnsortedPositive)
 {
-    std::array<int, 5> arr = { 5, 8, 9, 7, 6 };
+    std::array<int, 5> arr = { 10, 8, 9, 7, 6 };
     isort(arr);
-    ASSERT_THAT(arr, ::testing::ElementsAre(5, 6, 7, 8, 9));
+    ASSERT_THAT(arr, ::testing::ElementsAre( 6, 7, 8, 9, 10));
 }
 
 int main(int argc, char** argv)

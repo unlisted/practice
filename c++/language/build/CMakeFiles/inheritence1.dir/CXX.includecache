@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/morgan/work/practice/c++/language/inheritence1.cpp
+iostream
+-
+

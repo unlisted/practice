@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp
+iostream
+-
+sstream
+-
+utility
+-
+vector
+-
+

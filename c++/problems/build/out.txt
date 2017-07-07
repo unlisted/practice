@@ -1,0 +1,106 @@
+Scanning dependencies of target almost
+[ 50%] Building CXX object CMakeFiles/almost.dir/almost_sorted.cpp.o
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp: In function ‘int main(int, char**)’:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:56:37: error: ‘sItea2r’ was not declared in this scope
+     for (; nIter2 != rend(numbers), sItea2r != rend(sorted); sIter2++, nItea2r++) {
+                                     ^
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:56:72: error: ‘nItea2r’ was not declared in this scope
+     for (; nIter2 != rend(numbers), sItea2r != rend(sorted); sIter2++, nItea2r++) {
+                                                                        ^
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:57:21: error: ‘sItear2’ was not declared in this scope
+     if (*nIter2 != *sItear2) {
+                     ^
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:58:7: error: ‘rIter2’ was not declared in this scope
+       rIter2 = nIter2;
+       ^
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:28: error: ‘Iter’ was not declared in this scope
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                            ^
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:58: error: no match for ‘operator-’ (operand types are ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ and ‘<unresolved overloaded function type>’)
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                          ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:1:
+/usr/include/c++/5/bits/stl_iterator.h:801:7: note: candidate: __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-(__gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type) const [with _Iterator = int*; _Container = std::vector<int>; __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type = long int]
+       operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+       ^
+/usr/include/c++/5/bits/stl_iterator.h:801:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘__gnu_cxx::__normal_iterator<int*, std::vector<int> >::difference_type {aka long int}’
+/usr/include/c++/5/bits/stl_iterator.h:328:5: note: candidate: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:328:5: note:   template argument deduction/substitution failed:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:60: note:   ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                            ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:1:
+/usr/include/c++/5/bits/stl_iterator.h:380:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:380:5: note:   template argument deduction/substitution failed:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:60: note:   ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                            ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:1:
+/usr/include/c++/5/bits/stl_iterator.h:1138:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:1138:5: note:   template argument deduction/substitution failed:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:60: note:   ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ is not derived from ‘const std::move_iterator<_Iterator>’
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                            ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:1:
+/usr/include/c++/5/bits/stl_iterator.h:1145:5: note: candidate: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator-(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:1145:5: note:   template argument deduction/substitution failed:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:60: note:   ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ is not derived from ‘const std::move_iterator<_Iterator>’
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                            ^
+In file included from /usr/include/c++/5/vector:65:0,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:4:
+/usr/include/c++/5/bits/stl_bvector.h:208:3: note: candidate: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from ‘std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}’ to ‘const std::_Bit_iterator_base&’
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/morgan/work/practice/c++/problems/almost_sorted.cpp:1:
+/usr/include/c++/5/bits/stl_iterator.h:923:5: note: candidate: typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&) [with _Iterator = int*; _Container = std::vector<int>; typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type = long int]
+     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:923:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const __gnu_cxx::__normal_iterator<int*, std::vector<int> >&’
+/usr/include/c++/5/bits/stl_iterator.h:911:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:911:5: note:   template argument deduction/substitution failed:
+/home/morgan/work/practice/c++/problems/almost_sorted.cpp:66:60: note:   couldn't deduce template parameter ‘_IteratorR’
+         cout << "swap " << Iter - begin << ", " << rIter - begin << endl;
+                                                            ^
+CMakeFiles/almost.dir/build.make:62: recipe for target 'CMakeFiles/almost.dir/almost_sorted.cpp.o' failed
+make[2]: *** [CMakeFiles/almost.dir/almost_sorted.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/almost.dir/all' failed
+make[1]: *** [CMakeFiles/almost.dir/all] Error 2
+Makefile:94: recipe for target 'all' failed
+make: *** [all] Error 2

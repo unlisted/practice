@@ -47,3 +47,4 @@ add_executable(hashmap hashmap.cpp)
 add_executable(rvalue rvalue.cpp)
 
 add_executable(maxtrip maxtrip.cpp)
+add_executable(threads threads.cpp)

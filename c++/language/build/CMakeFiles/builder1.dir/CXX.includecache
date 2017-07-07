@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/morgan/work/practice/c++/language/builder1.cpp
+iostream
+-
+string
+-
+memory
+-
+

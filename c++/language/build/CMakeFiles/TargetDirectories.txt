@@ -1,0 +1,7 @@
+/home/morgan/work/practice/c++/language/build/CMakeFiles/test.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/rebuild_cache.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/edit_cache.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/inheritence1.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/constructors1.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/template1.dir
+/home/morgan/work/practice/c++/language/build/CMakeFiles/builder1.dir

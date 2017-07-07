@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread   CMakeFiles/builder1.dir/builder1.cpp.o  -o builder1 -rdynamic 

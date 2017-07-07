@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread   CMakeFiles/constructors1.dir/constructors1.cpp.o  -o constructors1 -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread   CMakeFiles/almost.dir/almost_sorted.cpp.o  -o almost -rdynamic 
